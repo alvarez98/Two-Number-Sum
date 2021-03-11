@@ -1,11 +1,3 @@
-function twoNumberSum(array, targetSum) {
-	let sum = 0
-	for(let data of array){
-		sum += data
-	}
-	
-  // Write your code here.
-}
+const { twoNumberSum } = require('./twoNumberSum')
 
-// Do not edit the line below.
-exports.twoNumberSum = twoNumberSum;
+console.log(twoNumberSum([3,5,-4,8,11,1,-1,6], 10))
