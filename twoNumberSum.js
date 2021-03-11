@@ -1,8 +1,8 @@
 const twoNumberSum = (array, targetSum) => {
-  let residues = {}
+  let complements = {}
   for (let number of array) {
-	if (residues[targetSum - number]) return [residues[targetSum - number], number]
-    else residues[number] = number
+    if (complements[targetSum - number]) return [number, targetSum - number]
+    else complements[number] = number
   }
   return []
 }
