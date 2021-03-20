@@ -1,7 +1,8 @@
 const twoNumberSum = (array, targetSum) => {
   let complements = {}
   for (let number of array) {
-    if (complements[targetSum - number]) return [number, targetSum - number]
+    const complement = targetSum - number
+    if (complements[complement]) return [number, complement]
     else complements[number] = number
   }
   return []
